@@ -2,8 +2,8 @@
 
 A lightweight, zero-dependency static website that automatically splits incoming traffic equally (50/50) between two destination links on page load.
 
-- **GitHub Repository**: https://github.com/yansirui-ship-it/random-redirect
-- **Live Site**: https://yansirui-ship-it.github.io/random-redirect/
+- **GitHub Repository**: https://github.com/yan-sirui/random-redirect
+- **Live Site**: https://yan-sirui.github.io/random-redirect/
 
 ---
 
