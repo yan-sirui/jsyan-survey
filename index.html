@@ -14,13 +14,16 @@
     // ==========================================
     // ⚙️ CONFIGURE YOUR TWO LINKS HERE
     // ==========================================
-    const LINK_1 = "mail.google.com";
+    const LINK_1 = "https://mail.google.com";
     const LINK_2 = "https://drive.google.com";
+
+    // Helper: auto-adds https:// if protocol is omitted
+    const formatUrl = (url) => /^https?:\/\//i.test(url) ? url : `https://${url}`;
 
     // Randomly pick one (50/50 chance)
     const links = [LINK_1, LINK_2];
     const randomIndex = Math.floor(Math.random() * links.length);
-    const destination = links[randomIndex];
+    const destination = formatUrl(links[randomIndex]);
 
     // Redirect immediately before the full DOM renders
     window.location.replace(destination);
