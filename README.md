@@ -2,6 +2,9 @@
 
 A lightweight, zero-dependency static website that automatically splits incoming traffic equally (50/50) between two destination links on page load.
 
+- **GitHub Repository**: https://github.com/yansirui-ship-it/random-redirect
+- **Live Site**: https://yansirui-ship-it.github.io/random-redirect/
+
 ---
 
 ## ⚙️ How to Change the Links
@@ -13,7 +16,13 @@ const LINK_1 = "https://your-first-link.com";
 const LINK_2 = "https://your-second-link.com";
 ```
 
-Save the file and commit/push to update your live site!
+Then commit and push your changes:
+```bash
+git add index.html
+git commit -m "Update destination links"
+git push
+```
+GitHub Pages will automatically deploy your updates in about 30 seconds!
 
 ---
 
